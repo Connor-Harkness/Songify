@@ -1643,6 +1643,11 @@ namespace Songify_Slim.Util.Songify
             return $"{GlobalObjects.ReqList[index].Artist} - {GlobalObjects.ReqList[index].Title}";
         }
 
+        private static List<QueueItem> GetQueue()
+        {
+            GlobalObjects.ReqList;
+        }
+
         private static List<QueueItem> GetQueueItems(string requester = null)
         {
             // Checks if the song ID is already in the internal queue (Mainwindow reqList)
